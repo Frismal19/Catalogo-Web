@@ -1,70 +1,99 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Catálogo Web de Productos
 
-## Available Scripts
+Aplicación web desarrollada con React que permite visualizar y explorar un catálogo de productos mediante tarjetas visuales y filtros por categoría. El proyecto utiliza FakeStoreAPI para obtener información de productos, incluyendo imágenes, nombres y precios.
 
-In the project directory, you can run:
+## Descripción del proyecto
 
-### `npm start`
+Este proyecto busca facilitar la visualización de inventarios de productos mediante una interfaz organizada y dinámica.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+La aplicación presenta los productos en tarjetas visuales y permite filtrarlos por categorías, como electrónicos, ropa y otras disponibles en la API. De esta manera, el usuario puede encontrar los productos de su interés de forma más sencilla, simulando la experiencia de navegación de una tienda en línea.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Funcionalidades
 
-### `npm test`
+- Visualización de productos mediante tarjetas.
+- Obtención dinámica de información desde FakeStoreAPI.
+- Filtrado de productos por categoría.
+- Opción para visualizar todos los productos.
+- Diseño adaptable a diferentes tamaños de pantalla.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tecnologías utilizadas
 
-### `npm run build`
+- **React 19:** Desarrollo de la interfaz y componentes reutilizables.
+- **JavaScript (ES6):** Lógica de la aplicación y manipulación de datos.
+- **Bootstrap:** Diseño adaptable mediante su sistema de cuadrícula (Grid).
+- **FakeStoreAPI:** Fuente externa de datos para obtener los productos.
+- **CSS:** Personalización de la presentación visual.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Estructura del proyecto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```text
+catalogo/
+├── public/
+├── src/
+│   ├── components/
+│   │   └── CatalogoProductos.js
+│   ├── App.js
+│   └── index.js
+├── package.json
+└── README.md
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Instalación y ejecución
 
-### `npm run eject`
+Para ejecutar el proyecto localmente, sigue estos pasos:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 1. Clonar el repositorio
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+git clone URL_DEL_REPOSITORIO
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 2. Entrar en la carpeta del proyecto
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+cd catalogo
+```
 
-## Learn More
+### 3. Instalar las dependencias
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 4. Iniciar la aplicación
 
-### Code Splitting
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+La aplicación se abrirá automáticamente en el navegador, normalmente en:
 
-### Analyzing the Bundle Size
+```text
+http://localhost:3000
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Scripts disponibles
 
-### Making a Progressive Web App
+El proyecto utiliza Create React App y dispone de los siguientes comandos:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+| Comando | Descripción |
+|---|---|
+| `npm start` | Inicia el servidor de desarrollo. |
+| `npm build` | Genera la versión optimizada para producción. |
+| `npm test` | Ejecuta las pruebas disponibles. |
 
-### Advanced Configuration
+## Aprendizajes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Durante el desarrollo de este proyecto se trabajó con:
 
-### Deployment
+- Consumo de APIs externas.
+- Renderizado dinámico de elementos utilizando `.map()`.
+- Filtrado de información mediante `.filter()`.
+- Gestión de estados con el hook `useState`.
+- Organización de componentes en React.
+- Implementación de diseños adaptables con Bootstrap.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Proyecto desarrollado como parte de mi proceso de aprendizaje en desarrollo de software.**
