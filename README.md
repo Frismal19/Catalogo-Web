@@ -1,58 +1,63 @@
-
 # Catálogo Web de Productos
 
-Aplicación web desarrollada con React que permite visualizar y explorar un catálogo de productos mediante tarjetas visuales y filtros por categoría. El proyecto utiliza FakeStoreAPI para obtener información de productos, incluyendo imágenes, nombres y precios.
+Aplicación web desarrollada con React que permite visualizar y explorar un catálogo de productos mediante una interfaz dinámica, tarjetas visuales y filtros por categoría. Utiliza FakeStoreAPI para obtener información de productos en tiempo real, incluyendo nombres, imágenes y precios.
 
 ## Descripción del proyecto
 
-Este proyecto busca facilitar la visualización de inventarios de productos mediante una interfaz organizada y dinámica.
+Este proyecto consiste en el desarrollo de un catálogo web que busca facilitar la visualización y exploración de inventarios de productos mediante una interfaz organizada y adaptable.
 
-La aplicación presenta los productos en tarjetas visuales y permite filtrarlos por categorías, como electrónicos, ropa y otras disponibles en la API. De esta manera, el usuario puede encontrar los productos de su interés de forma más sencilla, simulando la experiencia de navegación de una tienda en línea.
+La aplicación permite consultar diferentes productos y filtrarlos por categoría, facilitando la búsqueda de artículos específicos y simulando la experiencia de navegación de una tienda en línea.
+
+El desarrollo se enfocó en implementar una interfaz visual intuitiva, integrar una API externa y utilizar herramientas de React para gestionar y mostrar dinámicamente la información.
 
 ## Funcionalidades
 
-- Visualización de productos mediante tarjetas.
-- Obtención dinámica de información desde FakeStoreAPI.
-- Filtrado de productos por categoría.
-- Opción para visualizar todos los productos.
-- Diseño adaptable a diferentes tamaños de pantalla.
+- **Visualización de productos:** Presentación de productos mediante tarjetas visuales con imágenes, nombres y precios.
+- **Consumo de API:** Obtención dinámica de información mediante FakeStoreAPI.
+- **Filtro por categorías:** Permite seleccionar diferentes categorías para visualizar productos específicos.
+- **Vista general:** Opción para mostrar todos los productos disponibles.
+- **Diseño adaptable:** Distribución de los productos mediante el sistema Grid de Bootstrap.
 
 ## Tecnologías utilizadas
 
-- **React 19:** Desarrollo de la interfaz y componentes reutilizables.
-- **JavaScript (ES6):** Lógica de la aplicación y manipulación de datos.
-- **Bootstrap:** Diseño adaptable mediante su sistema de cuadrícula (Grid).
-- **FakeStoreAPI:** Fuente externa de datos para obtener los productos.
-- **CSS:** Personalización de la presentación visual.
+| Tecnología | Aplicación en el proyecto |
+|---|---|
+| React 19 | Desarrollo de la interfaz y renderizado dinámico de componentes. |
+| JavaScript (ES6) | Lógica de programación y manipulación de datos. |
+| Bootstrap | Diseño adaptable mediante el sistema Grid. |
+| CSS | Personalización de estilos visuales. |
+| FakeStoreAPI | Fuente externa de información de productos. |
 
 ## Estructura del proyecto
 
 ```text
-catalogo/
+Catalogo-Web/
 ├── public/
 ├── src/
 │   ├── components/
 │   │   └── CatalogoProductos.js
 │   ├── App.js
 │   └── index.js
+├── .gitignore
 ├── package.json
+├── package-lock.json
 └── README.md
 ```
 
 ## Instalación y ejecución
 
-Para ejecutar el proyecto localmente, sigue estos pasos:
+Para ejecutar el proyecto localmente, necesitas tener instalado [Node.js](https://nodejs.org/) y npm.
 
 ### 1. Clonar el repositorio
 
 ```bash
-git clone URL_DEL_REPOSITORIO
+git clone https://github.com/Frismal19/Catalogo-Web.git
 ```
 
-### 2. Entrar en la carpeta del proyecto
+### 2. Acceder a la carpeta del proyecto
 
 ```bash
-cd catalogo
+cd Catalogo-Web
 ```
 
 ### 3. Instalar las dependencias
@@ -67,33 +72,42 @@ npm install
 npm start
 ```
 
-La aplicación se abrirá automáticamente en el navegador, normalmente en:
+La aplicación estará disponible en el navegador en:
 
-```text
 http://localhost:3000
-```
 
 ## Scripts disponibles
 
-El proyecto utiliza Create React App y dispone de los siguientes comandos:
+El proyecto utiliza Create React App para administrar su entorno de desarrollo.
 
 | Comando | Descripción |
 |---|---|
 | `npm start` | Inicia el servidor de desarrollo. |
-| `npm build` | Genera la versión optimizada para producción. |
+| `npm run build` | Genera una versión optimizada para producción. |
 | `npm test` | Ejecuta las pruebas disponibles. |
 
-## Aprendizajes
+## Conceptos y aprendizajes aplicados
 
-Durante el desarrollo de este proyecto se trabajó con:
+Durante el desarrollo de este proyecto se trabajó con los siguientes conceptos:
 
-- Consumo de APIs externas.
+- Consumo e integración de APIs externas.
 - Renderizado dinámico de elementos utilizando `.map()`.
 - Filtrado de información mediante `.filter()`.
-- Gestión de estados con el hook `useState`.
-- Organización de componentes en React.
-- Implementación de diseños adaptables con Bootstrap.
+- Gestión de estados con el hook `useState` de React.
+- Organización y reutilización de componentes.
+- Diseño adaptable mediante Bootstrap.
+- Manipulación y visualización de datos utilizando JavaScript.
+
+## Capturas de pantalla
+
+<!-- Agregar aquí las capturas de pantalla del proyecto -->
+
+## Autor
+
+**Fabricio García**
+
+[GitHub - Frismal19](https://github.com/Frismal19)
 
 ---
 
-**Proyecto desarrollado como parte de mi proceso de aprendizaje en desarrollo de software.**
+Proyecto desarrollado como parte de mi proceso de formación y aprendizaje en desarrollo de software.
